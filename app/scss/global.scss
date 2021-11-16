@@ -1,0 +1,80 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header__block {
+    margin-bottom: 20px;
+    // width: 200px;
+    height: 100px;
+    background-color: black;
+}
+.orange {
+    background-color: orange;
+}
+.weather__app {
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+}
+.weather__country {
+    margin-bottom: 30px;
+}
+.weather__degree {
+    margin-bottom: 30px;
+}
+.weather__clouds {
+    margin-bottom: 30px;
+}
+.weather__img {
+    margin-bottom: 30px;
+}
+.get__weather {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    height: 30px;
+}
+.clickExpand {
+    width: 300px;
+    height: 400px;
+    background-color: orange;
+}
+.anon {
+    width: 300px;
+    background-color: black;
+    height: 200px;
+}
+
+.anon2 {
+    width: 300px;
+    background-color: orange;
+    height: 200px;
+}
