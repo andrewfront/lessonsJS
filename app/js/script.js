@@ -508,13 +508,311 @@ function anonFunc2() {
 }
 let anon2 = anonFunc2()
 anon2()
+
 function increaseAnon() {
     let count = 0
-    return function() {
-        count ++
+    return function () {
+        count++
         console.log(count);
     }
 }
 let forwardAnon = increaseAnon()
 forwardAnon()
 forwardAnon()
+// import Swiper from 'swiper'
+// import Swiper, { Navigation, Autoplay} from 'swiper';
+// Swiper.use([Navigation, Autoplay]);
+// let mySwipe;
+// window.addEventListener('resize', () => {
+//     let myWidth = window.innerWidth
+//     if (myWidth < 780) {
+//     mySwipe = new Swiper('.swiper', {
+//     slidesPerView: 2,
+//     spaceBetween: 20,
+//     });
+
+//     } else {
+//         mySwipe = new Swiper('.swiper', {
+//             destroy: true,
+//             });
+//     }
+// })
+// const slides = document.querySelectorAll('.slider')
+// window.addEventListener('resize', () => {
+//     let myWidth = window.innerWidth
+//     if (myWidth < 780) {
+//         $('.slick').slick({
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             autoplay: true,
+//             autoplaySpeed: 2000,
+//         });
+
+//     } else {
+//         $('.slick').slick({
+//             responsive: [{
+//                 breakpoint: 780,
+//                 settings: "unslick"
+//             }]
+//         });
+//     }
+// })
+// const outIndex = document.querySelector('.index1')
+// const indexBtn = document.querySelector('.index')
+// const indexMassive = [3, 5, 10, 5, 12]
+// function getIndex() {
+//     const indexInputText = document.querySelector('.indexinput').value
+//     if (indexInputText.indexOf(5) !== -1) {
+//         outIndex.innerHTML = indexInputText.indexOf(5)
+//     }
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index1')
+// const indexBtn = document.querySelector('.index')
+// const indexMassive = [3, 7, 10, 5, 12]
+// function getIndex() {
+//     const indexInputText = document.querySelector('.indexinput').value
+//     for (let i = 0; i < indexInputText.length; i++) {
+//         if (indexInputText[i] == indexMassive.indexOf(5)) {
+//             console.log('all right');
+//         } else {
+//             console.log('try again');
+//         }
+//     }
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// const indexMassive = [3, 7, 10, 5, 12]
+// function getIndex() {
+//     const indexInputText = document.querySelector('.indexinput2').value
+//     if (indexInputText.includes(3)) {
+//         console.log('все получилось');
+//     } else {
+//         console.log('попробуйте еще раз');
+//     }
+
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// const indexMassive = [3, 7, 10, 5, 12]
+// function getIndex() {
+//     const indexInputText = document.querySelector('.indexinput2').value
+//     if (indexInputText.includes(7) === indexMassive.includes(7)) {
+//         console.log('все получилось');
+//     } else {
+//         console.log('попробуйте еще раз');
+//     }
+
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// function getIndex() {
+//     // parseInt for input to get number
+//     const indexMassive = [3, 7, 10, 5, 12]
+//     let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+//     indexMassive.push(indexInputText)
+//     indexInputText = Math.pow(indexInputText, 3)
+//     indexMassive.push(indexInputText)
+//     console.log(indexMassive);
+
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// function getIndex() {
+//     // parseInt for input to get number
+//     const indexMassive = [3, 7, 10, 5, 12]
+//     indexMassive.pop()
+//     console.log(indexMassive);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// function getIndex() {
+//     let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+//     const indexMassive = [3, 7, 10, 5, 12]
+//     indexMassive.unshift(indexInputText)
+//     indexInputText = Math.pow(indexInputText, 3)
+//     indexMassive.unshift(indexInputText)
+//     console.log(indexMassive);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//     // получить целое число
+//      const result = indexMassive.filter(item => {
+//         return item % 2 == 0
+
+//     })
+//     console.log(result);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//     // получить целое число
+//      const result = indexMassive.filter((item, index) => {
+//         if (index % 2 == 0) {
+//             return item
+//         }
+//     })
+//     console.log(result);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//      const result = indexMassive.filter((item, index) => {
+//         if (index > 4) {
+//             return item
+//         }
+//     })
+//     console.log(result);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//     console.log(Array.isArray(indexMassive));
+//     let mySet = new Set();
+//     mySet.add(3)
+//     mySet.add(7)
+//     mySet.add(10)
+//     mySet.add('set')
+//     let obj = {
+//         name: 'Boris',
+//         age: 37
+//     }
+//     mySet.add(obj)
+//     console.log(mySet);
+//     console.log(Array.isArray(mySet));
+//     //Объекты Set позволяют вам сохранять уникальные значения любого типа, как примитивы, так и другие типы объектов.
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//     let b = indexMassive.reduce((accum, item) => {
+//         accum = accum + item
+//         // accum = accum + ' ' + item превращает в строку
+//         return accum
+//     })
+//     console.log('========================');
+//     console.log(b);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//     let b = indexMassive.reduce((accum, item) => {
+//         accum = accum + item
+//         return accum
+//     }, 13)
+//     //  с чего можно начинать прибавление
+//     console.log('========================');
+//     console.log(b);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// const outIndex = document.querySelector('.index2')
+// const indexBtn = document.querySelector('.index2Btn')
+// let indexInputText = parseInt(document.querySelector('.indexinput2').value)
+// function getIndex() {
+//     const indexMassive = [3, 7, 10, 5, 12, 14, 6]
+//     let b = indexMassive.reduce((accum, item) => {
+//         if (item > accum) {
+//             accum = item
+//         }
+//         return accum
+//     })
+//     //  получаем наибольшее число
+//     console.log('========================');
+//     console.log(b);
+// }
+// indexBtn.addEventListener('click', getIndex)
+// let arrData = [
+//     {'id': 75, 'city': 'Moscow'},
+//     {'id': 135, 'city': 'Peter'},
+//     {'id': 48, 'city': 'Ekat'}
+// ]
+// let getReduce = arrData.reduce((accum, item) => {
+//     //return item.id выведет только последний айди
+//     accum.push(item.id)
+//     return accum
+//     // маасив с данными
+// }, [])
+// console.log(getReduce);
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+// const a = [2, 4, 6, 8, 10]
+// const b = [1, 3, 5, 7, 9]
+// const c = a.concat(b).join(" ")
+// outConcat.innerHTML += c + ' '
+// const d = 'Andrew' + ' '
+// const e = 'Moscow'
+// const f = d.concat(e)
+// outConcat.innerHTML += f + ' '
+// const g = a.concat(d)
+// outConcat.innerHTML += g
+// }
+// concatBtn.addEventListener('click', getConcat)
+// Метод slice() возвращает новый массив, содержащий копию части исходного массива. arr.slice([begin[, end]])
+//Метод splice() изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые. array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [13, 15, 22, 23, 26, 35, 72];
+//     let b = a1.find(item => {
+//         if (item > 23 && item < 27) {
+//             return true
+//         }
+//     })
+//     console.log(b);
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [55, 50, 33, 45, 26, 96, 12];
+//     let b = a1.find(item => {
+//         if (item > 50 && item < 56) {
+//             return true
+//         }
+//     })
+//     console.log(b);
+// }
+// concatBtn.addEventListener('click', getConcat)
+const concatBtn = document.querySelector('.concat')
+const outConcat = document.querySelector('.outconcat')
+function getConcat() {
+    let a10 = [55, 50, 33, 45, 26, 96, 12];
+    let result = []
+    a10.filter(item => {
+        if (item > 10 && item < 50) {
+            result.push(item)
+        }
+    })
+    let b = result.findIndex(item => {
+        if (item === 33) {
+            return true
+        }
+    })
+    outConcat.innerHTML = b
+}
+concatBtn.addEventListener('click', getConcat)
