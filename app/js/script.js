@@ -798,21 +798,139 @@ forwardAnon()
 //     console.log(b);
 // }
 // concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a10 = [55, 50, 33, 45, 26, 96, 12];
+//     let result = []
+//     a10.filter(item => {
+//         if (item > 10 && item < 50) {
+//             result.push(item)
+//         }
+//     })
+//     let b = result.findIndex(item => {
+//         if (item === 33) {
+//             return true
+//         }
+//     })
+//     outConcat.innerHTML = b
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [22, 33, 44, 55, 66, 77, 88];
+//     let a2 = a1.reverse()
+//     outConcat.innerHTML = a2.join(" ")
+
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let s2 = 'mazahackercrackall';
+//     let a2 = s2.split("")
+//     let a3 = a2.reverse().join(" ")
+//     outConcat.innerHTML = a3
+
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [
+//             {'id': 75, 'city': 'Moscow'},
+//             {'id': 135, 'city': 'Peter'},
+//             {'id': 48, 'city': 'Ekat'}
+//         ]
+//         let a2 = a1.reverse()
+//         console.log(a2);
+
+// }
+// concatBtn.addEventListener('click', getConcat)
+//split and join исходный массив остается неизменным
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [13, 15, 22, 23, 26, 35, 72];
+//     let a2 = a1.join()
+//     outConcat.innerHTML = a2()
+
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [13, 15, 22, 23, 26, 35, 72];
+//     let a2 = a1.join(" ")
+//     outConcat.innerHTML = a2
+
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [13, 15, 22, 23, 26, 35, 72];
+//     let a2 = a1.join("=")
+//     outConcat.innerHTML = a2
+
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [22, 33, 44, 55, 66, 77, 88];
+//     let a2 = a1.every(item => {
+//         if (item > 7 && item < 100) {
+//             return true
+//         }
+//     })
+//     outConcat.innerHTML = a2
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [22, 33, 44, 55, 66, 77, 88];
+//     let a2 = a1.every(item => {
+//         if (item < 7) {
+//             return true
+//         }
+//     })
+//     outConcat.innerHTML = a2
+// }
+// concatBtn.addEventListener('click', getConcat)
+// const concatBtn = document.querySelector('.concat')
+// const outConcat = document.querySelector('.outconcat')
+// function getConcat() {
+//     let a1 = [22, 33, 44, 55, 66, 77, 88];
+//     let a2 = []
+//     let a3 = a1.reduce((accum, item) => {
+//         return accum + item
+//     })
+//     a2.push(a3)
+//     let a4 = a2.every(item => {
+//         if (item > 20) {
+//             return true
+//         }
+//     })
+//     outConcat.innerHTML = a4
+// }
+// concatBtn.addEventListener('click', getConcat)
+// Метод flat() возвращает новый массив, в котором все элементы вложенных подмассивов были рекурсивно "подняты" на указанный уровень depth. параметр принимет уровень вложенности
+//Метод fill() заполняет все элементы массива от начального до конечного индексов одним значением. arr.fill(value[, start = 0[, end = this.length]]) изменяет исходный массив
+//Метод Object.keys() возвращает массив из собственных перечисляемых свойств переданного объекта, в том же порядке, в котором они бы обходились циклом for...in (разница между циклом и методом в том, что цикл перечисляет свойства и из цепочки прототипов). получает ключи обьекта и массива, ключи являются строковыми параметрами
 const concatBtn = document.querySelector('.concat')
 const outConcat = document.querySelector('.outconcat')
 function getConcat() {
-    let a10 = [55, 50, 33, 45, 26, 96, 12];
-    let result = []
-    a10.filter(item => {
-        if (item > 10 && item < 50) {
-            result.push(item)
-        }
+    let a1 = [13, [4, 5], 22, [6, 7], [26, 35, 72]];
+    let result = a1.flat()
+    // for (let i = 0; i < result.length; i++) {
+    //     outConcat.innerHTML += result[i] + ' '
+    //     //ставим через пробел
+    // }
+    result.forEach(item => {
+        outConcat.innerHTML += item + ' '
     })
-    let b = result.findIndex(item => {
-        if (item === 33) {
-            return true
-        }
-    })
-    outConcat.innerHTML = b
 }
 concatBtn.addEventListener('click', getConcat)
